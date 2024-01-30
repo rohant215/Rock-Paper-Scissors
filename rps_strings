@@ -1,0 +1,50 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void rps(string plr1, string plr2)
+{
+    if (plr1 == plr2)
+    {
+        cout << "Tie";
+    }
+    else if (plr1 == "rock" && plr2 == "paper")
+    {
+        cout << "Player 2 Wins!";
+    }
+    else if (plr1 == "rock" && plr2 == "scissors")
+    {
+        cout << "Player 1 Wins!";
+    }
+    else if (plr1 == "paper" && plr2 == "rock")
+    {
+        cout << "Player 1 Wins!";
+    }
+    else if (plr1 == "paper" && plr2 == "scissors")
+    {
+        cout << "Player 2 Wins!";
+    }
+    else if (plr1 == "scissors" && plr2 == "rock")
+    {
+        cout << "player 1 Wins!";
+    }
+    else if (plr1 == "scissors" && plr2 == "paper")
+    {
+        cout << "Player 2 Wins!";
+    }
+}
+
+int main()
+{
+    string plr1 {};
+    string plr2 {};
+
+    cout << "Enter rock, paper, scissors for Player 1: ";
+    cin >> plr1;
+
+    cout << "Enter rock, paper, scissors for Player 2: ";
+    cin >> plr2;
+
+    rps(plr1, plr2);
+    return 0;
+}
